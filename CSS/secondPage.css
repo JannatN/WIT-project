@@ -1,0 +1,13 @@
+body {
+    background: #d4d4d3;
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+
+.cv-template {
+    grid-area: 1;
+
+}
+.about{
+    grid-area: 2;
+}

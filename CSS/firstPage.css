@@ -11,7 +11,7 @@ body {
     display: grid;
     grid-template-rows: 15% 70% auto;
     height: 80vh;
-    background-color: white;
+    background-color: #d4d4d3;
     justify-self: center;
     border-radius: 5px;
     border-radius: 60px;
@@ -45,7 +45,7 @@ body {
     grid-area: 2;
     padding: 10px;
     margin: 3px 0 10px 0;
-    display: block;
+    display: inline-block;
     background: white;
     border-radius: 5px;
     border: 1px solid red;

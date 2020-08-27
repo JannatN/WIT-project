@@ -52,5 +52,13 @@ function btn_backToForm2() {
 	count = count - 1;
 	getFieldElements[count].className = "Card";
 };
+function submit() {
+	location.href = "../Public/secondPage.html";
+}
 
+function input() {
+	var input = document.getElementById('name')
+	var div = document.getElementById('about');
+	div.innerHTML = div.innerHTML + input.value;
+}
 console.log("loaded");
