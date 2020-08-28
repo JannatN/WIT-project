@@ -57,9 +57,15 @@ function submit() {
 }
 
 function input() {
-	var thing = document.getElementById('input1').value;
-	localStorage.setItem('someName', thing);
-	console.log(localStorage.getItem('someName', thing));
+	var items = [];
+	for (i = 1; i < 5; i++) {
+		items.push(document.getElementById('input' + i).value);
+		localStorage.setItem('<br>', 'someName', items);
+		console.log(localStorage.getItem('someName', items));
+	}
+	// items.push(document.getElementById('input1').value);
+	// localStorage.setItem('someName', items);
+	// console.log(localStorage.getItem('someName', items));
 
 
 	// var input = document.getElementById('input')
