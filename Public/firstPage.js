@@ -56,21 +56,27 @@ function submit() {
 
 }
 
-function input() {
+function page1Input() {
 	var items = [];
 	for (i = 1; i < 5; i++) {
 		items.push(document.getElementById('input' + i).value);
 		sessionStorage.setItem('someName', items);
 	}
 	console.log(sessionStorage.getItem('someName', items));
+}
 
-	// items.push(document.getElementById('input1').value);
-	// localStorage.setItem('someName', items);
-	// console.log(localStorage.getItem('someName', items));
-
-
-	// var input = document.getElementById('input')
-	// var div = document.getElementById('about');
-	// div.innerHTML = div.innerHTML + input.value;
+function page2Input() {
+	var items = [];
+	for (i = 1; i < 2; i++) {
+		items.push(document.getElementById('txtarea' + i).value);
+		sessionStorage.setItem('textAreaInput', items);
+	}
+	console.log(sessionStorage.getItem('textAreaInput', items));
+}
+function page3Input() {
+	var items = [];
+	items.push(document.getElementById('exp').value);
+	sessionStorage.setItem('experienceJob', items);
+	console.log(sessionStorage.getItem('experienceJob', items));
 }
 console.log("loaded");

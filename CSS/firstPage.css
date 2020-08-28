@@ -12,11 +12,11 @@ body {
     grid-template-rows: 15% 70% auto;
     height: 80vh;
     background-color: #d4d4d3;
-    justify-self: center;
-    border-radius: 5px;
-    border-radius: 60px;
-    margin-top: 50px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        justify-self: center;
+        border-radius: 5px;
+        border-radius: 60px;
+        margin-top: 50px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .welcome {

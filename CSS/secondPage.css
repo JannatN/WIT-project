@@ -9,8 +9,46 @@ body {
 }
 
 #about {
+    margin: 10px;
     grid-area: 2;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: blanchedalmond;
+}
+
+.title {
+    margin: 10px;
+    border-style: dashed;
+    border-spacing: 6;
+    color: red;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background: rgb(245, 194, 164);
+    margin: 10px;
+    border: 1 solid black;
+}
+
+#education {
+    margin: 10px;
+    grid-area: 2;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: blanchedalmond;
+}
+
+#experience {
+    margin: 10px;
+    grid-area: 2;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: blanchedalmond;
 }
