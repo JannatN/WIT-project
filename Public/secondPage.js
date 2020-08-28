@@ -8,4 +8,4 @@
 //     document.getElementById('about').innerHTML = 'hi';
 
 // }
-document.getElementById("about").innerHTML += localStorage.getItem('someName') + '<br/>';
+document.getElementById("about").innerHTML = sessionStorage.getItem('someName') ;
