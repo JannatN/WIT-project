@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Best CV</title>
     <link rel="stylesheet" href="../CSS/firstPage.css">
-    <script src="../JS/firstPage.js"></script>
 
 </head>
 
@@ -15,17 +14,16 @@
             <div class="welcome">Personal Details</div>
             <div class="inputs">
                 <label class="label">What's your Full Name?</label> <br>
-                <input class="input" type="text" name="name" placeholder="Full Name" onchange="input()"><br>
+                <input id="input1" class="input" type="text" name="name" placeholder="Full Name" onchange=input()><br>
                 <label class="label">What's Your E-mail?</label><br>
-                <input class="input" type="email" name="email" placeholder=" Your Email"><br>
+                <input id="input2" class="input" type="email" name="email" placeholder=" Your Email"><br>
                 <label class="label">Let us know your Address!</label><br>
-                <input class="input" type="text" name="Address" placeholder="Address"><br>
+                <input id="input3" class="input" type="text" name="Address" placeholder="Address"><br>
                 <label class="label">What's your Phone Number?</label><br>
-                <input class="input" type="number" name="Phone" placeholder="Phone Number"><br>
+                <input id="input4" class="input" type="number" name="Phone" placeholder="Phone Number"><br>
 
             </div>
-            <div class="buttons">
-                <button class="button" onclick="btn_next()">Next</button></div>
+            <div class="buttons"> <button class="button" onclick="btn_next()">Next</button></div>
 
         </section>
     </fieldset>
@@ -41,9 +39,10 @@
             </div>
             <div class="buttons">
                 <button class="button" onclick=" btn_backToForm1()">Back</button>
-                <button class="button" onclick="btn_next()">Next</button></div>
-
+                <button class="button" onclick="btn_next()">Next</button>
+            </div>
         </section>
+
     </fieldset>
     <fieldset class="hide">
         <section>
@@ -55,12 +54,11 @@
             </div>
             <div class="buttons"> <button class="button" onclick=" btn_backToForm2()">Back</button></div>
             <div class="buttons"> <button class="button" type="submit" onclick="submit()">Submit</button></div>
-
             </div>
         </section>
     </fieldset>
+    <script src="firstPage.js"></script>
 
 </body>
-
 
 </html>

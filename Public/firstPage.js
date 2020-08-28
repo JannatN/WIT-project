@@ -1,9 +1,7 @@
 console.log("Reloaded");
 
-// dom variables
 var getFieldElements = document.getElementsByTagName("fieldset");
 
-// declaring the active fieldset & the total fieldset count
 var count = 0;
 var fieldset = getFieldElements[count];
 
@@ -53,12 +51,19 @@ function btn_backToForm2() {
 	getFieldElements[count].className = "Card";
 };
 function submit() {
-	location.href = "../Public/secondPage.html";
+	location.href = "secondPage.html";
+	input();
+
 }
 
 function input() {
-	var input = document.getElementById('name')
-	var div = document.getElementById('about');
-	div.innerHTML = div.innerHTML + input.value;
+	var thing = document.getElementById('input1').value;
+	localStorage.setItem('someName', thing);
+	console.log(localStorage.getItem('someName', thing));
+
+
+	// var input = document.getElementById('input')
+	// var div = document.getElementById('about');
+	// div.innerHTML = div.innerHTML + input.value;
 }
 console.log("loaded");

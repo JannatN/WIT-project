@@ -6,8 +6,11 @@ body {
 
 .cv-template {
     grid-area: 1;
-
 }
-.about{
+
+#about {
     grid-area: 2;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
