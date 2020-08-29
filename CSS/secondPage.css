@@ -1,54 +1,73 @@
 body {
-    background: #d4d4d3;
+    background: #a5b7c0;
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 70% auto;
 }
 
 .cv-template {
     grid-area: 1;
+    display: grid;
+    grid-template-rows: 30% 30% auto;
+}
+
+#name {
+    grid-area: 1;
+    text-align: center;
+    margin: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(8, 84, 119);
 }
 
 #about {
     margin: 10px;
-    grid-area: 2;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: blanchedalmond;
+    color: rgb(8, 84, 119);
 }
 
 .title {
     margin: 10px;
-    border-style: dashed;
-    border-spacing: 6;
-    color: red;
+    color: rgb(105, 138, 172);
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container {
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    background: rgb(245, 194, 164);
-    margin: 10px;
-    border: 1 solid black;
+    margin: 0px;
+    height: 98vh;
+    display: grid;
+    grid-template-rows: 30% 30% 30% auto;
+    background: rgb(8, 84, 119);
 }
 
 #education {
     margin: 10px;
-    grid-area: 2;
     font-weight: 500;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: blanchedalmond;
 }
 
 #experience {
     margin: 10px;
-    grid-area: 2;
     font-weight: 500;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: blanchedalmond;
+}
+
+#contact {
+    grid-area: 2;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#languages {
+    margin: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
