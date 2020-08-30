@@ -11,19 +11,31 @@ function btn_next() {
 
 	var fieldsetAction = document.querySelectorAll("fieldset")[count];
 	var fieldCount = fieldsetAction.querySelectorAll("input").length;
+	var fieldCount1 = fieldsetAction.querySelectorAll("textarea").length;
+
 
 	for (i = 0; i < fieldCount; ++i) {
-		var fieldInput = fieldsetAction.querySelectorAll("input")[i];
-		if (fieldInput.getAttribute("type") === "button") {
-			// nothing happens
-		} else {
-			if (fieldInput.value === "") {
-				fieldInput.style.backgroundColor = "pink";
-				isClicked = false;
+		for (j = 0; j < fieldCount1; ++j) {
+			var fieldInput = fieldsetAction.querySelectorAll("input")[i];
+			var fieldtxtarea = fieldsetAction.querySelectorAll("textarea")[j];
+
+			if (fieldInput.getAttribute("type") === "button" || fieldtxtarea.getAttribute("type") === "button") {
+				// nothing happens
 			} else {
-				if (isClicked === false) { } else {
-					isClicked = true;
-					fieldInput.style.backgroundColor = "none";
+				if (fieldInput.value === "" || fieldtxtarea.value === "") {
+					fieldInput.style.backgroundColor = "pink";
+					fieldtxtarea.style.backgroundColor = "pink";
+
+					isClicked = false;
+				} else {
+					if (isClicked === false) {
+						// nothing happens
+
+					} else {
+						isClicked = true;
+						fieldInput.style.backgroundColor = "none";
+						fieldtxtarea.style.backgroundColor = "none";
+					}
 				}
 			}
 		};
