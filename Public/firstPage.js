@@ -82,8 +82,8 @@ function input() {
 
 	var items = [];
 	for (i = 1; i < 4; i++) {
-		items.push(document.getElementById('input' + i).value);
-		sessionStorage.setItem('contact', items);
+		items.push(document.getElementById('input' + i).value + '<br /> ');
+		sessionStorage.setItem('contact', items.join('<br /> '));
 	}
 }
 
