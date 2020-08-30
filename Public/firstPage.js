@@ -55,28 +55,27 @@ function submit() {
 	input();
 
 }
+function input() {
+	var name = document.getElementById('name').value,
+		aboutName = document.getElementById('aboutName').value,
+		edu = document.getElementById('edu').value,
+		language = document.getElementById('languages').value,
+		exp = document.getElementById('exp').value;
 
-function page1Input() {
+	sessionStorage.setItem('me', name);
+	sessionStorage.setItem('about-me', aboutName);
+	sessionStorage.setItem('language', language);
+	sessionStorage.setItem('education', edu);
+	sessionStorage.setItem('experienceJob', exp);
+
 	var items = [];
-	for (i = 1; i < 5; i++) {
+	for (i = 1; i < 4; i++) {
 		items.push(document.getElementById('input' + i).value);
-		sessionStorage.setItem('someName', items);
+		sessionStorage.setItem('contact', items);
 	}
-	console.log(sessionStorage.getItem('someName', items));
 }
 
-function page2Input() {
-	var items = [];
-	for (i = 1; i < 2; i++) {
-		items.push(document.getElementById('txtarea' + i).value);
-		sessionStorage.setItem('textAreaInput', items);
-	}
-	console.log(sessionStorage.getItem('textAreaInput', items));
-}
-function page3Input() {
-	var items = [];
-	items.push(document.getElementById('exp').value);
-	sessionStorage.setItem('experienceJob', items);
-	console.log(sessionStorage.getItem('experienceJob', items));
-}
+
+
+
 console.log("loaded");

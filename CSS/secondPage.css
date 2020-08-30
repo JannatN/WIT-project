@@ -7,7 +7,7 @@ body {
 .cv-template {
     grid-area: 1;
     display: grid;
-    grid-template-rows: 30% 30% auto;
+    grid-template-rows: 10% 15%  25% auto;
 }
 
 #name {
@@ -17,7 +17,8 @@ body {
     font-weight: 700;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(8, 84, 119);
+    color: white;
+    /* -webkit-text-stroke: 2px rgb(3, 24, 48); */
 }
 
 #about {
@@ -26,6 +27,7 @@ body {
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(8, 84, 119);
+    border-bottom: 2px solid rgb(8, 84, 119);
 }
 
 .title {
@@ -40,7 +42,7 @@ body {
     margin: 0px;
     height: 98vh;
     display: grid;
-    grid-template-rows: 30% 30% 30% auto;
+    grid-template-rows: 10% 30% auto;
     background: rgb(8, 84, 119);
 }
 

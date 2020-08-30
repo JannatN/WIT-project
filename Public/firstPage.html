@@ -13,21 +13,20 @@
         <section class="Card">
             <div class="welcome">Personal Details</div>
             <div class="inputs">
-                <label id="label1" class=" label">What's your Full Name?</label> <br>
-                <input id="input1" class="input" type="text" name="name" placeholder="Full Name"
-                    onchange=page1Input()><br>
-                <label class="label">Tell us about your Education!</label>
-                <textarea id="about-me" class="textarea" type="text" placeholder="About me"
-                    onchange=page1Input()></textarea><br>
-                <label id="label2" class=" label">What's Your E-mail?</label><br>
-                <input id="input2" class="input" type="email" name="email" placeholder=" Your Email"
+                <label class=" label">What's your Full Name?</label> <br>
+                <input id="name" class="input" type="text" placeholder="Full Name" onchange=input()><br>
+                <label class="label">About you</label><br>
+                <textarea id="aboutName" class="input" type="text" placeholder="About me"
+                    onchange=input()></textarea><br>
+
+                <label class=" label">What's Your E-mail?</label><br>
+                <input id="input1" class="input" type="email" name="email" placeholder=" Your Email"
                     onchange=input()><br>
-                <label id="label3" class="label">Let us know your Address!</label><br>
-                <input id="input3" class="input" type="text" name="Address" placeholder="Address"
-                    onchange=page1Input()><br>
-                <label id="label4" class="label">What's your Phone Number?</label><br>
-                <input id="input4" class="input" type="number" name="Phone" placeholder="Phone Number"
-                    onchange=page1Input()><br>
+                <label class="label">Let us know your Address!</label><br>
+                <input id="input2" class="input" type="text" name="Address" placeholder="Address" onchange=input()><br>
+                <label class="label">What's your Phone Number?</label><br>
+                <input id="input3" class="input" type="number" name="Phone" placeholder="Phone Number"
+                    onchange=input()><br>
 
             </div>
             <div class="buttons"> <button class="button" onclick="btn_next()">Next</button></div>
@@ -39,10 +38,11 @@
             <div class="welcome">Education</div>
             <div class="inputs">
                 <label class="label">Tell us about your Education!</label>
-                <textarea id="txtarea1" class="textarea" type="text" placeholder="EX-2018-2022: Bethlehem University"
-                    onchange=page2Input()></textarea>
+                <textarea id="edu" class="textarea" type="text" placeholder="EX-2018-2022: Bethlehem University"
+                    onchange=input()></textarea>
+
                 <label class="label">Languages</label>
-                <input id="input" class="input" type="text" placeholder="Enter Languages" onchange=page2Input()>
+                <input id="languages" class="input" type="text" placeholder="Enter Languages" onchange=input()>
             </div>
             <div class="buttons"> <button class="button" onclick=" btn_backToForm1()">Back</button></div>
             <div class="buttons"> <button class="button" onclick="btn_next()">Next</button></div>
@@ -56,7 +56,7 @@
                 <label class="label">Tell us about your Work Experience!</label>
                 <textarea id="exp" class="textarea" name="Experience"
                     placeholder="2020-persent: senior at Google . 2018-2020: junior at Amazon"
-                    onchange=page3Input()></textarea>
+                    onchange=input()></textarea>
             </div>
             <div class="buttons"> <button class="button" onclick=" btn_backToForm2()">Back</button></div>
             <div class="buttons"> <button class="button" type="submit" onclick="submit()">Submit</button></div>
