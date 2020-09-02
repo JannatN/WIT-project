@@ -1,7 +1,7 @@
 body {
     background: #cdd9df;
     display: grid;
-    grid-template-columns: 70% auto;
+    grid-template-columns: 80% 20%;
 }
 
 .cv-template {
