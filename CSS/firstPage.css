@@ -4,6 +4,8 @@ body {
     justify-content: center;
     text-align: center;
     background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .Card {
@@ -17,6 +19,10 @@ body {
     border-radius: 60px;
     margin-top: 50px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#cvPic {
+  margin-top: 35px;
 }
 
 .welcome {
@@ -57,7 +63,7 @@ body {
 }
 
 .textarea {
-    white-space: pre-wrap; 
+    white-space: pre-wrap;
     width: 50vh;
     height: 20vh;
     justify-self: center;
